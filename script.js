@@ -99,7 +99,7 @@ function renderPage(users){
           size++;
           });
     }
-    //let size = $('#slideshow ul > div').length
+
     $('#slideshow ul > div').hide();
     $('#slideshow ul > div:eq('+slideNum +')').show();
     // $('body').on('click', '#lightbox', function() { // using .on() instead of .live(). more modern, and fixes event bubbling issues
