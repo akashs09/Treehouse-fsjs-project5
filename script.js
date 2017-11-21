@@ -43,7 +43,7 @@ function searchUsers(input){
   var finalArray = [];
   userAdded = [];
   for(var i = 0; i < orignal.length; i++){
-    if(((((users[i].name.first).indexOf(input) > -1) || ((users[i].name.last).indexOf(input) > -1) || ((users[i].email).indexOf(input) > -1)) && userAdded.indexOf(i) < 0)) {
+    if(((((users[i].name.first).indexOf(input) > -1) || ((users[i].name.last).indexOf(input) > -1) || ((users[i].login.username).indexOf(input) > -1)) && userAdded.indexOf(i) < 0)) {
       finalArray.push(users[i]);
       userAdded.push(i);
     }
